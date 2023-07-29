@@ -1,4 +1,36 @@
 body {
-  padding: 4%;
+  padding: 3%;
   background-color: #f5f6fa;
+}
+
+.nav {
+  background-color: #fff;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 1px 1px;
+}
+
+.nav-link {
+  list-style-type: none;
+  padding: 6px;
+  margin: 2px 10px;
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.avatar {
+  float: right;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
 }

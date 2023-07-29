@@ -1,13 +1,12 @@
-import './assets/style.css';
 import Navigation from './Navigation';
 
-function Home() {
+function Category() {
   return (
     <div className="container">
       <Navigation />
-      <h1>Book list herer</h1>
+      <h1> Under the construction </h1>
     </div>
   );
 }
 
-export default Home;
+export default Category;
