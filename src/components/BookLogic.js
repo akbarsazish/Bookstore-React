@@ -6,17 +6,17 @@ const BookLogic = () => {
   const [books, setBooks] = useState([
     {
       id: 1,
-      title: 'Setup development environment',
+      title: 'Java',
       author: 'Ali',
     },
     {
       id: 2,
-      title: 'Develop website and add content',
+      title: 'JavaScript',
       author: 'Jhon',
     },
     {
       id: 3,
-      title: 'Deploy to live server',
+      title: 'PHP',
       author: 'foo',
     },
   ]);
@@ -34,11 +34,10 @@ const BookLogic = () => {
     const newBook = {
       id: 4,
       title: title,
-      completed: "ABC",
+      author: "ABC",
     };
     setBooks([...books, newBook]);
   };
-  
 
   return (
     <>

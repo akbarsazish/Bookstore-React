@@ -34,3 +34,11 @@ body {
   font-weight: 700;
   color: #0290ff;
 }
+
+.mySelect {
+  width: 111px;
+}
+
+form {
+  margin-top: 22px;
+}
