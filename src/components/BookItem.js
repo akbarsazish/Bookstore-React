@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const BookItem = ({ itemProp, setBooks, delBook}) => { 
  return ( 
    <li>
-     { itemProp.title }
+     { itemProp.title } {itemProp.author}
      <button onClick={() => delBook(itemProp.id)}>Delete</button>
   </li>
  );
