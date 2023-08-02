@@ -1,14 +1,18 @@
 import React from 'react';
-import './assets/style.css';
-import Navigation from './Navigation';
-import BookLogic from './BookLogic';
 
 /* eslint-disable */
-const Book = () => {
+const Book = ({ book }) => {
   return (
-    <div className="container">
-      <Navigation />
-      <BookLogic />
+    <div>
+      <h3>{book.title}</h3>
+      <p>
+        Author:
+        {book.author}
+      </p>
+      <p>
+        Category:
+        {book.category}
+      </p>
     </div>
   );
 };
