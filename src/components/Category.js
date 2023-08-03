@@ -1,18 +1,20 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCategoryStatus } from '../redux/categories/categoriesSlice';
 
-/* eslint-disable */
 const Category = () => {
   const categories = useSelector((state) => state.categories.categories);
-  console.log(categories);
+  const underConstructionText = categories[0];
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCategoryStatus());
+  }, [dispatch]);
+
   return (
     <div className="container" style={{ backgroundColor: '#fff', padding: '22px' }}>
-        {categories.map((category) => (
-        <div key={book.item_id}>
-           { category }
-        </div>
-      ))}
+      <h1>{underConstructionText}</h1>
     </div>
   );
 };
+
 export default Category;
