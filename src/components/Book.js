@@ -13,15 +13,15 @@ const Book = ({ book }) => {
 
   return (
     <div className="book-store">
-        <div className="book-store-item">
-           {book.category}
-          <h3>{book.title}</h3>
-          {book.author}
-          <Button type="button" onClick={() => handleRemoveBook(book.item_id)} text="Remove Book" />
-        </div>
-        <div className="book-store-item">
-          <button className="update-btn" type="button"> Update In progresss </button>
-        </div>
+      <div className="book-store-item">
+        {book.category}
+        <h4 className="book-title">{book.title}</h4>
+        {book.author}
+        <Button buttonClass="remove-btn" onClick={() => handleRemoveBook(book.item_id)} text="Remove" />
+      </div>
+      <div className="book-store-item">
+        <button className="update-btn"> Update In progresss </button>
+      </div>
     </div>
   );
 };

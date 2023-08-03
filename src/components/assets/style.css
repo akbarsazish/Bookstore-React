@@ -51,3 +51,29 @@ form {
   padding: 22px;
   margin: 10px 1px;
 }
+
+button {
+  border:none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.book-title {
+  margin: 2px;
+}
+
+.add-btn {
+  background-color: #0092fa;
+  padding: 6px;
+}
+
+.remove-btn {
+  background-color: #f00;
+  padding: 3px;
+}
+
+.update-btn {
+  background-color: #0092fa;
+  padding: 9px;
+}

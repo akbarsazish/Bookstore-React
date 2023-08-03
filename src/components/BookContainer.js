@@ -25,7 +25,7 @@ const BookContainer = () => {
           <Book book={book} />
         </div>
       ))}
-      <Button type="button" onClick={handleAddBook} text="Add Book" />
+      <Button buttonClass="add-btn" type="button" onClick={handleAddBook} text="Add Book" />
     </div>
   );
 };
