@@ -1,12 +1,11 @@
-import Navigation from './Navigation';
+import React from 'react';
 
-function Category() {
+/* eslint-disable */
+const Category = () => {
   return (
-    <div className="container">
-      <Navigation />
+    <div className="container" style={{backgroundColor:"#fff", padding:"22px"}}>
       <h1> Under the construction </h1>
     </div>
   );
-}
-
+  }
 export default Category;

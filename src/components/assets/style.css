@@ -42,3 +42,12 @@ body {
 form {
   margin-top: 22px;
 }
+
+.book-store {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 22px;
+  margin: 10px 1px;
+}
