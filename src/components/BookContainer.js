@@ -1,23 +1,10 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { useSelector } from 'react-redux';
 import Book from './Book';
-import Button from './Button';
+import AddBookButton from './AddBookButton';
 
 const BookContainer = () => {
   const books = useSelector((state) => state.books.books);
-  const dispatch = useDispatch();
-
-  const handleAddBook = () => {
-    const newBook = {
-      item_id: `item${books.length + 1}`,
-      title: 'New Book Title',
-      author: 'New Author Name',
-      category: 'Fiction',
-    };
-    dispatch(addBook(newBook));
-  };
-
   return (
     <div>
       {books.map((book) => (
@@ -25,7 +12,7 @@ const BookContainer = () => {
           <Book book={book} />
         </div>
       ))}
-      <Button buttonClass="add-btn" type="button" onClick={handleAddBook} text="Add Book" />
+      <AddBookButton />
     </div>
   );
 };
