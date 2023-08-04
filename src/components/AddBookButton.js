@@ -36,12 +36,12 @@ const AddBookButton = () => {
   return (
     <div>
       <input
-        label="Book Title"
+        label="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
-        id="author" // Add id attribute to associate the label with this input
+        id="author"
         label="Author"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
@@ -52,7 +52,7 @@ const AddBookButton = () => {
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option value="">Select a category</option>
+          <option value="">Select category</option>
           {categories.map((cat) => (
             <option key={cat.value} value={cat.value}>
               {cat.label}
