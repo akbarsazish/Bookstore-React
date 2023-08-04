@@ -16,11 +16,11 @@ const BookForm = () => {
 
   return (
     <div className="book-form">
-      <p className="book-form-title">ADD NEW BOOK</p>
-      <form onSubmit={handleSubmit}>
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <form onSubmit={handleSubmit} className="form">
         <InputForm type="text" id="inputTitle" placeholder="Book title" isRequired />
         <InputForm type="text" id="inputAuthor" placeholder="Book Author" isRequired />
-        <button type="submit" id="btn-add-book">ADD BOOK</button>
+        <button type="submit" id="add-book-btn">ADD BOOK</button>
       </form>
     </div>
   );

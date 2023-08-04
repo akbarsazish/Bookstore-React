@@ -7,14 +7,13 @@ import BookContainer from './components/BookContainer';
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Navigation />
       <Routes>
         <Route path="/" element={<BookContainer />} />
         <Route path="/categories" element={<Category />} />
       </Routes>
-
-    </div>
+    </>
   );
 }
 

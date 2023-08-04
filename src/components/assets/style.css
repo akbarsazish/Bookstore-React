@@ -1,10 +1,19 @@
 body {
   padding: 3%;
-  background-color: #f5f6fa;
+  background-color: #f2f3f7;
+  font-family:
+    "Roboto Slab",
+    serif;
+}
+
+.container {
+  background-color: #fafafa;
+  padding: 2%;
 }
 
 .nav {
   background-color: #fff;
+  border-radius: 6px 6px 1px 1px;
 }
 
 .nav-items {
@@ -39,8 +48,12 @@ body {
   width: 111px;
 }
 
-form {
-  margin-top: 22px;
+.form {
+  display: flex;
+  grid-gap: 32px;
+  gap: 32px;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .book-store {
@@ -61,6 +74,8 @@ button {
 
 .book-title {
   margin: 2px;
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
 }
 
 .add-btn {
@@ -85,9 +100,14 @@ button {
   background-color: #fff;
   font-size: 1em;
   color: #373737;
+  width: 50%;
 }
 
-#btn-add-book {
+#inputAuthor {
+  width: 25%;
+}
+
+#add-book-btn {
   width: 15%;
   padding: 0.801rem 0.886rem;
   border: none;
@@ -102,6 +122,62 @@ button {
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
+}
+
+.form-title,
+.input {
+  font-family:
+    "Montserrat",
+    sans-serif;
+  margin-left: 11px;
+}
+
+.book-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  margin: 10px;
+}
+
+.competion-percentage {
+  margin: 12px 2px 2px 22px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.completed {
+  margin: 2px 22px;
+  color: gray;
+}
+
+.book-item {
+  width: 32%;
+  padding: 10px;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1rem 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.book-improvment {
+  display: flex;
+  padding: 10px 5px;
+}
+
+.book-category {
+  font-weight: 700;
+  color: gray;
+}
+
+.book-category,
+.book-author {
+  margin: 5px;
 }
 
 .book-actions {
@@ -128,4 +204,65 @@ ul {
   border: none;
   cursor: pointer;
   font-family: 'Roboto Slab', serif;
+}
+
+.circle {
+  position: relative;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  background: conic-gradient(#2c88d9 230deg, rgb(18, 18, 18, 0.1) 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  height: 3.7rem;
+  width: 3.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.current-chapter {
+  font-size: 0.813rem;
+  font-weight: 300;
+  opacity: 0.5;
+  color: #343434;
+  margin: 1rem 0.2rem 0 0;
+}
+
+.chapter-part {
+  display: flex;
+}
+
+.percentage {
+  margin-top: 1px;
+}
+
+.progress-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family:
+    "Roboto Slab",
+    serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.book-form {
+  margin-bottom: 88px;
+}
+
+.part-devider {
+  height: 0.125rem;
+  background-color: #e8e8e8;
+  width: 98%;
+  margin: 2.5rem 0.7rem 1.813rem;
 }

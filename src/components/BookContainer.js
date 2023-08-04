@@ -14,12 +14,13 @@ const BookContainer = ({ app_id }) => {
   }, [dispatch, app_id]);
 
   return (
-    <div>
+    <div className="container">
       {books.map((book) => (
         <div key={book.item_id}>
           <Book book={book} />
         </div>
       ))}
+      <div className="part-devider"></div>
       <AddBookButton app_id={app_id} />
     </div>
   );
