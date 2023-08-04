@@ -132,12 +132,19 @@ button {
   text-align: center;
 }
 
+.form-title{
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -.18px;
+}
+
 .form-title,
 .input {
   font-family:
     "Montserrat",
     sans-serif;
   margin-left: 11px;
+  color: #888;
 }
 
 .book-container {
