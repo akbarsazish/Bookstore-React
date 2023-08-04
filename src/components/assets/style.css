@@ -32,6 +32,12 @@ body {
 
 .link {
   text-decoration: none;
+  color: #cacaca;
+}
+
+.active-link {
+  opacity: 1;
+  color: #121212;
 }
 
 .avatar {
