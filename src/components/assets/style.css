@@ -152,13 +152,14 @@ button {
 
 .competion-percentage {
   margin: 12px 2px 2px 22px;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .completed {
   margin: 2px 22px;
   color: gray;
+  font-size: 0.87rem;
 }
 
 .book-item {
@@ -176,6 +177,7 @@ button {
 .book-improvment {
   display: flex;
   padding: 10px 5px;
+  float: right;
 }
 
 .book-category {
@@ -216,8 +218,8 @@ ul {
 
 .circle {
   position: relative;
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background: conic-gradient(#2c88d9 230deg, rgb(18, 18, 18, 0.1) 0deg);
   display: flex;
@@ -228,8 +230,8 @@ ul {
 .circle::before {
   content: '';
   position: absolute;
-  height: 3.7rem;
-  width: 3.7rem;
+  height: 4.3rem;
+  width: 4.3rem;
   border-radius: 50%;
   background-color: #fff;
 }

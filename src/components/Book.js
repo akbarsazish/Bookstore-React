@@ -30,7 +30,7 @@ const BookInfo = ({ book }) => {
             <div className="circle">
             </div>
             <div className="percentage">
-              <p className="competion-percentage"> 80 % </p> 
+              <p className="competion-percentage"> 64 % </p> 
               <p className="completed"> completed </p>
             </div>
           </div>
