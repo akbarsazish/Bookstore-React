@@ -1,5 +1,5 @@
 body {
-  padding: 3%;
+  padding: 4%;
   background-color: #f2f3f7;
   font-family:
     "Roboto Slab",
@@ -8,12 +8,14 @@ body {
 
 .container {
   background-color: #fafafa;
-  padding: 2%;
+  padding: 3%;
 }
 
 .nav {
   background-color: #fff;
   border-radius: 6px 6px 1px 1px;
+  padding-left: 33px;
+  padding-right: 33px;
 }
 
 .nav-items {
