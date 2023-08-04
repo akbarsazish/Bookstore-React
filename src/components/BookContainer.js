@@ -1,10 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import AddBookButton from './AddBookButton';
+import { fetchBooks } from '../redux/books/booksSlice';
 
-const BookContainer = () => {
+/* eslint-disable */
+const BookContainer = ({ app_id }) => {
   const books = useSelector((state) => state.books.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks(app_id));
+  }, [dispatch, app_id]);
+
   return (
     <div>
       {books.map((book) => (
@@ -12,7 +20,7 @@ const BookContainer = () => {
           <Book book={book} />
         </div>
       ))}
-      <AddBookButton />
+      <AddBookButton app_id={app_id} />
     </div>
   );
 };

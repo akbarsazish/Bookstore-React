@@ -1,28 +1,38 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import PropTypes from 'prop-types';
+import { removeBookFromApi } from '../redux/books/booksSlice';
+import RemoveButton from './RemoveButton';
 
-/* eslint-disable */
-const Book = ({ book }) => {
+const BookInfo = ({ book }) => {
   const dispatch = useDispatch();
 
-  const handleRemoveBook = (itemId) => {
-    dispatch(removeBook(itemId));
+  const handleClick = (idBook) => {
+    dispatch(removeBookFromApi(idBook));
   };
 
   return (
-    <div className="book-store">
-      <div className="book-store-item">
-        {book.category}
-        <h4 className="book-title">{book.title}</h4>
-        {book.author}
-        <button className="remove-btn" onClick={() => handleRemoveBook(book.item_id)}> remove </button>
-      </div>
-      <div className="book-store-item">
-        <button className="update-btn"> Update In progresss </button>
-      </div>
+    <div className="book-info">
+      <p className="book-category">{book.category}</p>
+      <h3 className="book-title">{book.title}</h3>
+      <p className="book-author">{book.author}</p>
+      <ul className="book-actions">
+        <li>Comments</li>
+        <li>
+          <RemoveButton handleRemoveClick={() => { handleClick(book.item_id); }} />
+        </li>
+        <li>Edit</li>
+      </ul>
     </div>
   );
 };
 
-export default Book;
+BookInfo.propTypes = {
+  book: PropTypes.shape({
+    item_id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default BookInfo;

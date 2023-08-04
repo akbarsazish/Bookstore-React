@@ -1,34 +1,29 @@
-import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBookToApi } from '../redux/books/booksSlice';
+import BookElement from '../helpers/BookElement';
+import InputForm from './InputForm';
 
-/* eslint-disable */
-const BookForm = ({ addBookItem }) => {
-  const [title, setTitle] = useState('');
-  const handleChange = (e) => {
-    setTitle(e.target.value);
-  };
+const BookForm = () => {
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addBookItem(title);
-    setTitle('');
+    const form = e.target;
+    const { inputTitle, inputAuthor } = form;
+    dispatch(addBookToApi(BookElement(inputTitle.value, inputAuthor.value)));
+    form.reset();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Add Todo..."
-       value={title}
-       onChange={handleChange} />
-       <select value="author" className="mySelect">
-        <option value="A">a</option>
-        <option value="B">b</option>
-        <option value="C">c</option>
-      </select>
-      <button>Submit</button>
-    </form>
+    <div className="book-form">
+      <p className="book-form-title">ADD NEW BOOK</p>
+      <form onSubmit={handleSubmit}>
+        <InputForm type="text" id="inputTitle" placeholder="Book title" isRequired />
+        <InputForm type="text" id="inputAuthor" placeholder="Book Author" isRequired />
+        <button type="submit" id="btn-add-book">ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 
 export default BookForm;
-
-
-  

@@ -77,3 +77,55 @@ button {
   background-color: #0092fa;
   padding: 9px;
 }
+
+.book-input {
+  padding: 0.813rem 0.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-size: 1em;
+  color: #373737;
+}
+
+#btn-add-book {
+  width: 15%;
+  padding: 0.801rem 0.886rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.book-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.book-author,
+.book-actions li,
+.book-actions li button {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2px;
+}
+
+.book-actions li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+}
