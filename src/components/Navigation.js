@@ -7,7 +7,7 @@ function Navigation() {
       <ul className="nav-items">
         <li className="nav-link">
           <Link to="/" className="link">
-            <h1 className="logo"> BookStor CMS </h1>
+            <h1 className="logo"> BookStore CMS </h1>
           </Link>
         </li>
         <li className="nav-link">
