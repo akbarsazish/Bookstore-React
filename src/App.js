@@ -10,8 +10,8 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/" element={<BookContainer />} />
-        <Route path="/categories" element={<Category />} />
+        <Route path="/Bookstore-React" element={<BookContainer />} />
+        <Route path="/categories/Bookstore-React" element={<Category />} />
       </Routes>
     </>
   );
