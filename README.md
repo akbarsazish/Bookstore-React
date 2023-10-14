@@ -57,6 +57,7 @@
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
+> - [Live Demo](https://akbarsazish.github.io/Bookstore-React/)
 
 > coming soon 🎈
 
